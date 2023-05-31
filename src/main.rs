@@ -77,7 +77,7 @@ fn calculate_mandelbrod(x:i64,y:i64,x_size:i64,y_size:i64, max_iters:i64, x_min:
 fn print_mandelbrod(iter:i64, max_iters:i64, zoom:f64) {
     let iter = iter as f64 * zoom;
     let max_iters = max_iters as f64 * zoom;
-    if iter <= 1.0 {
+    if iter <= 1.0 * zoom {
         print!(" ")
     } else if iter > max_iters /1.1 {
         print!("$");
